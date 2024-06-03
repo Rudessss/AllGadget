@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Bruno+Ace+SC&family=Cairo:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="home.html">
+            <div class="texpic">
+                <img src="Photos/logo.png" alt="">
+                <h1>AllGadet</h1>
+            </div>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="findus.html">Find Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <div class="text">
+            <h1>Improve<br>Your Gaming<br>Experience</h1>
+            <h2>Get It Now 37% Off</h2>
+            <a href="gallery.html" class="buy-btn">Buy Now</a>
+        </div>
+        <img src="Photos/Special product6.jpg" class="special-image" alt="">
+    </div>
+    </section>
+
+    <div class="container">
+        <div class="arrow-line"></div>
+    </div>
+
+    <section class="rotating-banner">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <div class="text">
+                        <h1>Xiaomi 13 Pro</h1>
+                        <ul>
+                            <li>6.73-inch Amoled</li>
+                            <li>Snapdragon 8 gen 2 SoC</li>
+                            <li>50MP+50MP+50MP rear cameras</li>
+                            <li>4,820Ah battery</li>
+                        </ul>
+                    </div>
+                    <img src="Photos/BannerProduct1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <h1>Galaxy X21</h1>
+                        <ul>
+                            <li>6.7-inch FHD</li>
+                            <li>Exynos 2100/SD 888</li>
+                            <li>12MP+12MP+64MP Triple rear camera</li>
+                            <li>4,800Ah battery</li>
+                        </ul>
+                    </div>
+                    <img src="Photos/BannerProduct2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <h1>Samsung QN90A QLED TV</h1>
+                        <ul>
+                            <li>4K UHD 3840 x 2160 QLED Panel.</li>
+                            <li>Quantum HDR 32X / HDR10, HDR10+, and HLG.</li>
+                            <li>FreeSync Premium Pro for Gaming.</li>
+                            <li>Bixby, Alexa, Google Assistant Built-In.</li>
+                        </ul>
+                    </div>
+                    <img src="Photos/BannerProduct3.jpg" alt="">
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="new-product">
+        <div class="text">
+            <h1>New</h1>
+            <div>
+                <div class="list">
+                    <img src="Photos/product6.jpg" alt="">
+                    <div class="description-box">
+                        <div class="description">
+                            <h2>Apple MacBook Pro M1</h2>
+                            <ul>
+                                <li>13.3-inch (diagonal) LED-backlit display with IPS technology</li>
+                                <li>8-core CPU with 4 performance cores</li>
+                                <li>8GB unified memory and 256GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <img src="Photos/product12.jpg" alt="">
+                    <div class="description-box">
+                        <div class="description">
+                            <h2>LG CX OLED TV</h2>
+                            <ul>
+                                <li>Display Type. OLED.</li>
+                                <li>High Dynamic Range (HDR) Yes</li>
+                                <li>Picture Quality Enhancement Technology. Cinema HDR.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <img src="Photos/product7.jpg" alt="">
+                    <div class="description-box">
+                        <div class="description">
+                            <h2>Bose QuietComfort Earbuds</h2>
+                            <ul>
+                                <li>Adjustable quiet & aware modes</li>
+                                <li>World's best noise cancellation </li>
+                                <li>Adjustable EQ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="text">
+            <a href="gallery.html">Go To Gallery</a>
+        </div>
+        <footer>
+            <p>&copy; 2023 AllGadget. All rights reserved.</p>
+        </footer>
+    </section>
+    <!------JavaScript for Toggle Menu----->
+    <!-- <script>
+        var navLinks = document.getElementById("nav-links");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        //-------------------------------------------//
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter>3) counter=1;
+        }, 3000)
+    </script> -->
+</body>
+</html>

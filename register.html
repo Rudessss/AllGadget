@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Bruno+Ace+SC&family=Cairo:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html">
+                <div class="texpic">
+                    <img src="Photos/logo.png" alt="">
+                    <h1>AllGadet</h1>
+                </div>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="findus.html">Find Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="register">
+        <div class="regist-container">
+            <form action="">
+                <div class="data">
+                    <div class="text"><h1>Register Now</h1></div>
+                    <label for="username">Full Name:</label><br>
+                    <input type="text" name="username" id="username" placeholder="Full Name"><br><br>
+                
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="@email.com"><br><br>
+                
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="8-12 characters"><br><br>
+                
+                    <label for="phonenumber">Phone Number</label><br>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="08**** **** ****"><br><br>
+                
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender">  
+                        <option value="empty">Choose One</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br><br>
+
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">I agree to the terms and conditions</label><br>
+
+                    <button type="submit" onclick="validateForm(event)">Register</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <footer>
+            <p>&copy; 2023 AllGadget. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>

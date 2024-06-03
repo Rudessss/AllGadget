@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Bruno+Ace+SC&family=Cairo:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js" defer></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html">
+                <div class="texpic">
+                    <img src="Photos/logo.png" alt="">
+                    <h1>AllGadet</h1>
+                </div>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="findus.html">Find Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="product-container">
+        <div class="text">
+            <h2>Our Products</h2>
+            <p>Electronic goods that can help your daily life both internally and externally</p>
+        </div>
+        <div class="line"></div>
+        <div class="productcontainer">
+            <div class="column">
+                <div class="product" onclick="showpopup(1)">
+                    <img src="Photos/product1.jpg" alt="">
+                    <div>
+                        <p>Xiaomi X13</p>
+                        <h3>IDR 1.999.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(2)">
+                    <img src="Photos/product2.jpg" alt="">
+                    <div>
+                        <p>Galaxy X21</p>
+                        <h3>IDR 5.999.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(3)">
+                    <img src="Photos/product3.jpg" alt="">
+                    <div>
+                        <p>QN90A QLED TV</p>
+                        <h3>IDR 13.499.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(4)">
+                    <img src="Photos/product4.jpg" alt="">
+                    <div>
+                        <p>Sony PlayStation 5</p>
+                        <h3>IDR 45.850.278</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(5)">
+                    <img src="Photos/product5.jpg" alt="">
+                    <div>
+                        <p>Helios PH315-54</p>
+                        <h3>IDR 15.999.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(6)">
+                    <img src="Photos/product6.jpg" alt="">
+                    <div>
+                        <p>MacBook Pro M1</p>
+                        <h3>IDR 12.799.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(7)">
+                    <img src="Photos/product7.jpg" alt="">
+                    <div>
+                        <p>Bose Earbuds</p>
+                        <h3>IDR 3.509.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(8)">
+                    <img src="Photos/product8.jpg" alt="">
+                    <div>
+                        <p>Fitbit Charge 4</p>
+                        <h3>IDR 1.899.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(9)">
+                    <img src="Photos/product9.jpg" alt="">
+                    <div>
+                        <p>Canon EOS R5</p>
+                        <h3>IDR 50.828.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(10)">
+                    <img src="Photos/product10.jpg" alt="">
+                    <div>
+                        <p>Oculus Quest 2</p>
+                        <h3>IDR 7.041.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(11)">
+                    <img src="Photos/product11.jpg" alt="">
+                    <div>
+                        <p>Amazon Echo</p>
+                        <h3>IDR 469.000</h3>
+                    </div>
+                </div>
+                <div class="product" onclick="showpopup(12)">
+                    <img src="Photos/product12.jpg" alt="">
+                    <div>
+                        <p>LG CX OLED TV</p>
+                        <h3>IDR 18.689.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 1" id="popup1" onmouseleave="closepop(1)", onclick="closepop(1)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product1.jpg" alt="">
+                        <div>
+                            <p>Xiaomi X13</p>
+                            <h3>IDR 12.999.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Xiaomi Mi 11 Ultra is a flagship smartphone boasting a large 6.81-inch Quad HD+ AMOLED display and a powerful Qualcomm Snapdragon 888 processor. It stands out with its exceptional camera system, featuring a 50MP primary sensor, 48MP ultra-wide-angle lens, and a 48MP periscope telephoto lens. The device also offers 8K video recording and supports 67W wired and wireless fast charging, along with reverse wireless charging. With its premium build, IP68 rating, and customizable MIUI software, the Mi 11 Ultra is a high-end device that caters to users seeking top-notch performance, stunning photography capabilities, and a sleek design.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 2" id="popup2" onmouseleave="closepop(2)", onclick="closepop(2)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product2.jpg" alt="">
+                        <div>
+                            <p>Galaxy X21</p>
+                            <h3>IDR 5.999.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>Samsung Galaxy S21 Ultra: The Samsung Galaxy S21 Ultra is a flagship smartphone featuring a large 6.8-inch Dynamic AMOLED display with a smooth 120Hz refresh rate. It is powered by the latest high-performance processors, offering excellent speed and multitasking capabilities. The device boasts an impressive camera system with a 108MP primary sensor, 100x Space Zoom, and advanced photography features. It also supports 5G connectivity, has a long-lasting battery, and offers various storage options.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 3" id="popup3" onmouseleave="closepop(3)", onclick="closepop(3)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product3.jpg" alt="">
+                        <div>
+                            <p>Samsung QN90A QLED TV</p>
+                            <h3>IDR 13.499.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Samsung QN90A QLED TV is a premium television that offers an impressive visual experience. It features a QLED panel with Quantum Dot technology, providing vibrant colors and high contrast. The TV supports 4K resolution and utilizes advanced technologies like HDR for stunning picture quality. It also offers a high refresh rate, making it suitable for gaming and sports enthusiasts. With a sleek design and smart features like voice control and smart home integration, the QN90A QLED TV delivers an immersive viewing experience.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 4" id="popup4" onmouseleave="closepop(4)", onclick="closepop(4)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product4.jpg" alt="">
+                        <div>
+                            <p>Sony PlayStation 5</p>
+                            <h3>IDR 45.850.278</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Sony PlayStation 5 is a highly anticipated gaming console with cutting-edge hardware and graphics capabilities. It delivers stunning 4K gaming experiences at high frame rates, thanks to its powerful custom AMD processor and dedicated GPU. The PlayStation 5 introduces an immersive DualSense controller with haptic feedback and adaptive triggers, enhancing gameplay interactions. It also supports backward compatibility with some PlayStation 4 games and offers features like fast loading times and ray tracing for enhanced realism.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 5" id="popup5" onmouseleave="closepop(5)", onclick="closepop(5)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product5.jpg" alt="">
+                        <div>
+                            <p>Acer Helios PH315-54</p>
+                            <h3>IDR 15.999.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>
+                            The Acer Helios PH315-54 is a gaming laptop designed to deliver an exceptional gaming experience. It features a 15.6-inch display with options for Full HD or 4K resolution, providing crisp visuals. Powered by Intel Core processors and NVIDIA GeForce RTX graphics, it offers strong performance for demanding games. The laptop also includes ample RAM and storage options, ensuring smooth multitasking and sufficient space for game installations. With its robust cooling system, backlit keyboard, and various connectivity options, the Acer Helios PH315-54 is a powerful gaming laptop that caters to gamers looking for immersive gameplay and high-performance hardware.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 6" id="popup6" onmouseleave="closepop(6)", onclick="closepop(6)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product6.jpg" alt="">
+                        <div>
+                            <p>Apple MacBook Pro M1</p>
+                            <h3>IDR 12.799.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Apple MacBook Pro M1 is a powerful laptop that utilizes Apple's custom-designed M1 chip, delivering exceptional performance and energy efficiency. It features a Retina display with high resolution and true-tone technology for accurate colors. The MacBook Pro M1 offers a responsive and comfortable keyboard, a large trackpad, and a long-lasting battery. With the macOS operating system and seamless integration with other Apple devices, it provides a seamless and productive user experience for both work and creative tasks.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 7" id="popup7" onmouseleave="closepop(7)", onclick="closepop(7)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product7.jpg" alt="">
+                        <div>
+                            <p>Bose QuietComfort Earbuds</p>
+                            <h3>IDR 3.509.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Bose QuietComfort Earbuds are premium wireless earbuds that offer excellent active noise cancellation, allowing users to enjoy their music or calls without distractions. They provide a comfortable fit and feature intuitive touch controls for easy operation. The earbuds deliver high-quality sound, clear voice calls, and have a long battery life for extended use. They are also water-resistant, making them suitable for workouts and outdoor activities.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 8" id="popup8" onmouseleave="closepop(8)", onclick="closepop(8)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product8.jpg" alt="">
+                        <div>
+                            <p>Fitbit Charge 4</p>
+                            <h3>IDR 1.899.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4> The Fitbit Charge 4 is a feature-packed fitness tracker that helps users monitor their daily activity, sleep, and heart rate. It offers built-in GPS, allowing for accurate tracking of outdoor workouts like running and cycling. The Charge 4 provides insights into exercise intensity, calories burned, and offers personalized guided breathing sessions. With its sleek design, long battery life, and smartphone notifications, it is a versatile device for those looking to track their fitness and overall well-being.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 9" id="popup9" onmouseleave="closepop(9)", onclick="closepop(9)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product9.jpg" alt="">
+                        <div>
+                            <p>Canon EOS R5</p>
+                            <h3>IDR 50.828.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Canon EOS R5 is a high-end mirrorless camera with impressive capabilities for professional photographers and videographers. It features a full-frame sensor with 45 megapixels, enabling exceptional image quality. The camera offers advanced autofocus, fast burst shooting, and in-body image stabilization for sharp and steady photos and videos. It can record 8K video with high-quality output and supports a range of professional features and accessories, making it a versatile tool for capturing stunning visuals.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 10" id="popup10" onmouseleave="closepop(10)", onclick="closepop(10)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product10.jpg" alt="">
+                        <div>
+                            <p>Oculus Quest 2</p>
+                            <h3>IDR 7.041.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Oculus Quest 2 is a popular virtual reality headset designed for immersive gaming and entertainment experiences. It features a high-resolution display, offering crisp visuals and a wide field of view. The Quest 2 is a standalone device, meaning it does not require a PC or console to operate. It offers hand tracking and supports a wide range of VR games and apps from the Oculus store. With its comfortable design and intuitive controllers, it provides an accessible and enjoyable virtual reality experience for both casual and avid gamers.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 11" id="popup11" onmouseleave="closepop(11)", onclick="closepop(11)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product11.jpg" alt="">
+                        <div>
+                            <p>Amazon Echo</p>
+                            <h3>IDR 469.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The Amazon Echo is a smart speaker powered by Amazon's virtual assistant, Alexa. It provides voice-controlled access to a wide range of functions and services, including playing music, answering questions, setting reminders, controlling smart home devices, and more. The Echo offers high-quality audio and comes in various sizes and designs to fit different needs and spaces. With Alexa's constantly expanding skills and integrations, the Echo is a versatile device that can enhance daily routines and bring convenience to the home.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up 12" id="popup12" onmouseleave="closepop(12)", onclick="closepop(12)">
+                <div class="pop-container">
+                    <div class="popleft">
+                        <img src="Photos/product12.jpg" alt="">
+                        <div>
+                            <p>LG CX OLED TV</p>
+                            <h3>IDR 18.689.000</h3>
+                        </div>
+                    </div>
+                    <div class="popright">
+                        <h4>The LG CX OLED TV is a premium television known for its exceptional picture quality. It utilizes OLED technology, offering deep blacks, vibrant colors, and wide viewing angles. The TV supports 4K resolution with HDR content, delivering stunning visuals and enhanced contrast. It features a sleek design with thin bezels and offers smart TV functionality with access to popular streaming services and voice control. With HDMI 2.1 ports and features like variable refresh rate (VRR), it is also suitable for gaming enthusiasts.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <div class="text">
+            <h2>Categories</h2>
+        </div>
+        <div class="line"></div>
+        <div class="column">
+            <div class="cat phone">
+                <h3>Phones</h3>
+                <p>Shop Now</p>
+            </div>
+            <div class="cat other">
+                <div class="other one">
+                    <h3>Sport</h3>
+                    <p>Shop Now</p>
+                </div>
+                <div class="other two">
+                    <h3>Wearables</h3>
+                    <p>Shop Now</p>
+                </div>
+            </div>
+            <div class="cat laptop">
+                <h3>Laptops</h3>
+                <p>Shop Now</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <footer>
+            <p>&copy; 2023 AllGadget. All rights reserved.</p>
+        </footer>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
